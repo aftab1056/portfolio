@@ -76,6 +76,34 @@
       border-bottom: 1px solid var(--border-subtle);
     }
 
+    .hero-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: clamp(1.5rem, 4vw, 3rem);
+    }
+
+    .hero-content {
+      min-width: 0;
+    }
+
+    .hero-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .hero-photo {
+      width: min(100%, 320px);
+      max-width: 320px;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
     .hero-badge {
       display: inline-flex;
       align-items: center;
@@ -88,10 +116,34 @@
       font-weight: 500;
       color: var(--text-secondary);
       margin-bottom: 2rem;
+      min-height: 2.1rem;
     }
 
     .hero-badge i {
       color: var(--accent-blue);
+      flex-shrink: 0;
+    }
+
+    .hero-badge .typewriter {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.2rem;
+      white-space: nowrap;
+      font-family: 'Inter', sans-serif;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text-primary);
+    }
+
+    .hero-badge .typewriter::after {
+      content: '|';
+      color: var(--accent-blue);
+      animation: blink 0.9s steps(1) infinite;
+      margin-left: 0.15rem;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
     }
 
     .hero h1 {
@@ -406,6 +458,19 @@
         padding: 2rem 0 2.5rem;
       }
 
+      .hero-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-media {
+        order: -1;
+        margin-bottom: 1rem;
+      }
+
+      .hero-photo {
+        width: min(100%, 220px);
+      }
+
       .projects-header {
         flex-direction: column;
         align-items: flex-start;
@@ -480,18 +545,26 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-badge">
-      <i class="fas fa-code"></i> available for opportunities
-    </div>
-    <h1>MERN Stack Developer</h1>
-    <div class="hero-sub">I build secure web applications,<br>dashboards, authentication systems, and AI-powered solutions.</div>
-    <div class="hero-desc">
-      <i class="fas fa-bolt" style="color: var(--accent-blue); margin-right: 6px;"></i> 
-      Why hire Aftab? — Full‑cycle development, clean code, and modern architectures.
-    </div>
-    <div class="hero-cta">
-      <a class="btn-primary" href="https://www.fiverr.com/s/BR5xqed" target="_blank" rel="noopener noreferrer"><i class="fas fa-paper-plane"></i> Let’s build</a>
-      <span class="btn-outline"><i class="fas fa-chevron-right"></i> 3 featured projects</span>
+    <div class="hero-layout">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-code"></i>
+          <span class="typewriter" id="heroTypewriter"></span>
+        </div>
+        <h1>MERN Stack Developer</h1>
+        <div class="hero-sub">I build secure web applications,<br>dashboards, authentication systems, and AI-powered solutions.</div>
+        <div class="hero-desc">
+          <i class="fas fa-bolt" style="color: var(--accent-blue); margin-right: 6px;"></i> 
+          Why hire Aftab? — Full‑cycle development, clean code, and modern architectures.
+        </div>
+        <div class="hero-cta">
+          <a class="btn-primary" href="https://www.fiverr.com/s/BR5xqed" target="_blank" rel="noopener noreferrer"><i class="fas fa-paper-plane"></i> Fiverr profile</a>
+          <a class="btn-outline" href="https://www.upwork.com/services/product/2075664786707786520" target="_blank" rel="noopener noreferrer"><i class="fas fa-chevron-right"></i> Upwork project catalog</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img class="hero-photo" src="uploads/aftab.png" alt="Aftab Jamil" loading="eager">
+      </div>
     </div>
   </section>
 
@@ -499,21 +572,27 @@
   <section class="projects-section">
     <div class="projects-header">
       <div>
-        <span class="section-tag"><i class="fas fa-folder-open"></i> portfolio</span>
-        <h2>Featured projects</h2>
+        <span class="section-tag"><i class="fas fa-folder-open"></i> Three Features make Full Stack web application</span>
       </div>
-      <span style="color: var(--text-secondary); font-size: 0.9rem;"><i class="fas fa-play-circle" style="color: var(--accent-blue);"></i> previews (upload folder)</span>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; color: var(--text-secondary); font-size: 0.9rem;">
+        <span style="display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(79, 140, 255, 0.08); border: 1px solid rgba(79, 140, 255, 0.16); padding: 0.4rem 0.8rem; border-radius: 999px;">
+          <i class="fas fa-check-circle" style="color: var(--accent-blue);"></i> Full-stack web applications
+        </span>
+        <span style="display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(79, 140, 255, 0.08); border: 1px solid rgba(79, 140, 255, 0.16); padding: 0.4rem 0.8rem; border-radius: 999px;">
+          <i class="fas fa-lock" style="color: var(--accent-blue);"></i> Secure auth systems
+        </span>
+        <span style="display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(79, 140, 255, 0.08); border: 1px solid rgba(79, 140, 255, 0.16); padding: 0.4rem 0.8rem; border-radius: 999px;">
+          <i class="fas fa-robot" style="color: var(--accent-blue);"></i> AI-powered dashboards
+        </span>
+      </div>
     </div>
 
     <div class="projects-grid">
-
       <!-- 1. MERN Authentication System -->
       <div class="project-card" tabindex="0" role="button" data-video="uploads/🔐 Secure Registration & Email Verification.mp4" aria-label="Open preview video for MERN Authentication System">
         <div class="project-media">
-          <!-- video from uploads folder: admin and customer chatbot.mp4 -->
           <video muted loop playsinline preload="metadata">
             <source src="uploads/🔐 Secure Registration & Email Verification.mp4" type="video/mp4">
-            <!-- fallback placeholder -->
             <div class="play-placeholder">
               <i class="fas fa-video"></i>
               <span>preview</span>
@@ -584,43 +663,45 @@
         </div>
       </div>
 
-      <!-- 4. Advance React Portfolio -->
-      <div class="project-card" tabindex="0" role="button" data-video="uploads/advance portfolio.mp4" aria-label="Open preview video for Advance React Portfolio">
+      <!-- 4. React Advanced Concepts -->
+      <div class="project-card" tabindex="0" role="button" data-video="uploads/advance portfolio.mp4" aria-label="Open preview video for React Advanced Concepts">
         <div class="project-media">
           <video muted loop playsinline preload="metadata">
             <source src="uploads/advance portfolio.mp4" type="video/mp4">
             <div class="play-placeholder">
-              <i class="fas fa-robot"></i>
-              <span>preview</span>
+              <i class="fas fa-react"></i>
+              <span>concepts</span>
             </div>
           </video>
         </div>
-        <h3 class="project-title">Advance React Portfolio</h3>
-        <div class="project-sub"><i class="fas fa-brain" style="color: var(--accent-blue);"></i> Gemini/Ollama · Vector search</div>
+        <h3 class="project-title">React Advanced Concepts</h3>
+        <div class="project-sub"><i class="fas fa-cogs" style="color: var(--accent-blue);"></i> Hooks · Performance · State architecture</div>
         <ul class="feature-list">
-          <li>Gemini/Ollama</li>
-          <li>Vector search</li>
-          <li>Document Q&A</li>
+          <li>useMemo &amp; useCallback</li>
+          <li>Custom hooks &amp; composition</li>
+          <li>Context API &amp; reducers</li>
+          <li>Lazy loading &amp; code splitting</li>
+          <li>Memoization &amp; optimization patterns</li>
         </ul>
         <div class="project-footer">
-          <span><i class="fas fa-microchip"></i> RAG pipeline</span>
-          <span><i class="fas fa-database"></i> vector DB</span>
+          <span><i class="fas fa-sparkles"></i> advanced patterns</span>
+          <span><i class="fas fa-layer-group"></i> scalable UI</span>
         </div>
       </div>
-
-    </div>
-    <!-- extra note: secure registration & email verification (mentioned in pic) -->
-    <div style="margin-top: 2.5rem; padding: 1rem 1.5rem; background: var(--bg-card); border-radius: 2rem; border: 1px solid var(--border-subtle); display: inline-flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
-      <span style="display: flex; align-items: center; gap: 0.5rem;"><i class="fas fa-check-circle" style="color: var(--accent-blue);"></i> Secure Registration & Email Verification</span>
-      <span style="color: var(--text-secondary); font-size: 0.9rem;"><i class="fas fa-arrow-right"></i> included in auth system</span>
     </div>
   </section>
 
   <!-- FOOTER -->
   <div class="footnote">
-    <span><i class="fas fa-code"></i> MERN stack · 3 featured projects</span>
-    <span><i class="fas fa-play"></i> videos from /uploads folder</span>
-    <span><i class="fas fa-user-tie"></i> Aftab · portfolio</span>
+    <a href="https://www.linkedin.com/in/aftab-jamil-03a95a2b7/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 0.45rem;">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://aftabjamildev.vercel.app" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 0.45rem;">
+      <i class="fas fa-globe"></i> Portfolio
+    </a>
+    <a href="https://github.com/aftab1056/portfolio" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 0.45rem;">
+      <i class="fab fa-github"></i> GitHub
+    </a>
   </div>
 
 </div>
@@ -637,6 +718,40 @@
 
 <script>
   (function() {
+    const typewriter = document.getElementById('heroTypewriter');
+    const phrases = ['AFTAB JAMIL', 'AVAILABLE FOR OPPORTUNITIES'];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    const tick = () => {
+      const current = phrases[phraseIndex];
+      if (!typewriter) return;
+
+      if (!isDeleting) {
+        typewriter.textContent = current.slice(0, charIndex + 1);
+        charIndex += 1;
+        if (charIndex === current.length) {
+          isDeleting = true;
+          setTimeout(tick, 1100);
+          return;
+        }
+      } else {
+        typewriter.textContent = current.slice(0, charIndex - 1);
+        charIndex -= 1;
+        if (charIndex === 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+        }
+      }
+
+      setTimeout(tick, isDeleting ? 60 : 120);
+    };
+
+    if (typewriter) {
+      tick();
+    }
+
     const modal = document.getElementById('video-modal');
     const modalPlayer = document.getElementById('video-modal-player');
     const closeModal = () => {
