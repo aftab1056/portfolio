@@ -290,6 +290,7 @@
       height: 100%;
       object-fit: cover;
       display: block;
+      pointer-events: none;
     }
 
     .project-media .play-placeholder {
@@ -781,6 +782,11 @@
           openVideo(event);
         }
       });
+
+      const previewVideo = card.querySelector('video');
+      if (previewVideo) {
+        previewVideo.addEventListener('touchstart', event => event.preventDefault());
+      }
     });
 
     modal.querySelector('.video-modal-close')?.addEventListener('click', closeModal);
