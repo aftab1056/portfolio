@@ -117,6 +117,7 @@
       color: var(--text-secondary);
       margin-bottom: 2rem;
       min-height: 2.1rem;
+      flex-wrap: wrap;
     }
 
     .hero-badge i {
@@ -140,6 +141,28 @@
       color: var(--accent-blue);
       animation: blink 0.9s steps(1) infinite;
       margin-left: 0.15rem;
+    }
+
+    /* WhatsApp icon in badge */
+    .whatsapp-badge-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: #25D366;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 1rem;
+      margin-left: 0.5rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      flex-shrink: 0;
+      box-shadow: 0 0 12px rgba(37, 211, 102, 0.4);
+    }
+
+    .whatsapp-badge-icon:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 20px rgba(37, 211, 102, 0.7);
     }
 
     @keyframes blink {
@@ -337,9 +360,9 @@
     .project-sub {
       font-size: 0.9rem;
       color: var(--text-secondary);
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       border-bottom: 1px dashed var(--border-subtle);
-      padding-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
     }
 
     .feature-list {
@@ -361,8 +384,36 @@
       letter-spacing: 0.01em;
     }
 
+    /* Problem-Solution-Result lines */
+    .psr-lines {
+      margin-top: 0.9rem;
+      padding: 0.6rem 0.8rem;
+      background: rgba(79, 140, 255, 0.04);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 0.5rem 0.5rem 0;
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .psr-lines span {
+      display: block;
+    }
+
+    .psr-lines .psr-label {
+      font-weight: 700;
+      color: var(--accent-blue);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-right: 0.25rem;
+    }
+
     .project-footer {
-      margin-top: 1.2rem;
+      margin-top: 1rem;
       display: flex;
       align-items: center;
       gap: 1rem;
@@ -485,6 +536,17 @@
         width: min(100%, 220px);
       }
 
+      .hero-badge {
+        padding: 0.4rem 0.8rem;
+        gap: 0.35rem;
+      }
+
+      .whatsapp-badge-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 0.85rem;
+      }
+
       .projects-header {
         flex-direction: column;
         align-items: flex-start;
@@ -531,6 +593,11 @@
         padding: 1rem;
       }
 
+      .psr-lines {
+        font-size: 0.73rem;
+        padding: 0.5rem 0.6rem;
+      }
+
       .project-footer {
         flex-direction: column;
         align-items: flex-start;
@@ -564,6 +631,10 @@
         <div class="hero-badge">
           <i class="fas fa-code"></i>
           <span class="typewriter" id="heroTypewriter"></span>
+          <!-- WhatsApp Business Icon -->
+          <a href="https://wa.me/923287635726" target="_blank" rel="noopener noreferrer" class="whatsapp-badge-icon" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
         </div>
         <h1>MERN Stack Developer</h1>
         <div class="hero-sub">I build secure web applications,<br>dashboards, authentication systems, and AI-powered solutions.</div>
@@ -582,11 +653,11 @@
     </div>
   </section>
 
-  <!-- PROJECTS (3 featured) -->
+  <!-- PROJECTS (4 featured) -->
   <section class="projects-section">
     <div class="projects-header">
       <div>
-        <span class="section-tag"><i class="fas fa-folder-open"></i> Three Features make Full Stack web application</span>
+        <span class="section-tag"><i class="fas fa-folder-open"></i> Four Features make Full Stack web application</span>
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; color: var(--text-secondary); font-size: 0.9rem;">
         <span style="display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(79, 140, 255, 0.08); border: 1px solid rgba(79, 140, 255, 0.16); padding: 0.4rem 0.8rem; border-radius: 999px;">
@@ -624,6 +695,12 @@
           <li>Email verification</li>
           <li>Role-based access</li>
         </ul>
+        <!-- Problem-Solution-Result -->
+        <div class="psr-lines">
+          <span><span class="psr-label">Problem:</span> Small businesses need a secure login system for their admin panel.</span>
+          <span><span class="psr-label">Solution:</span> Built a MERN Authentication system with JWT + Google OAuth + role-based access.</span>
+          <span><span class="psr-label">Result:</span> Plug-and-play auth module that can be integrated in 2 hours.</span>
+        </div>
         <div class="project-footer">
           <span><i class="fas fa-check-circle"></i> production ready</span>
           <span><i class="fas fa-lock"></i> secure</span>
@@ -631,10 +708,10 @@
       </div>
 
       <!-- 2. E-commerce Platform -->
-      <div class="project-card" tabindex="0" role="button" data-video="uploads/ecommerece with stripe payment.mp4" aria-label="Open preview video for E-commerce Platform">
+      <div class="project-card" tabindex="0" role="button" data-video="uploads/ecommerce.mp4" aria-label="Open preview video for E-commerce Platform">
         <div class="project-media">
           <video muted loop playsinline preload="metadata">
-            <source src="uploads/ecommerece with stripe payment.mp4" type="video/mp4">
+            <source src="uploads/ecommerce.mp4" type="video/mp4">
             <div class="play-placeholder">
               <i class="fas fa-shopping-cart"></i>
               <span>preview</span>
@@ -653,6 +730,12 @@
           <li>Admin dashboard</li>
           <li>Payment integration</li>
         </ul>
+        <!-- Problem-Solution-Result -->
+        <div class="psr-lines">
+          <span><span class="psr-label">Problem:</span> Businesses need a reliable online selling platform with integrated payments.</span>
+          <span><span class="psr-label">Solution:</span> Built a full-stack MERN E-commerce platform with Stripe payment + admin dashboard.</span>
+          <span><span class="psr-label">Result:</span> Ready-to-deploy online store that can process orders within 24 hours.</span>
+        </div>
         <div class="project-footer">
           <span><i class="fas fa-cubes"></i> full-stack</span>
           <span><i class="fas fa-cash-register"></i> Stripe</span>
@@ -680,6 +763,12 @@
           <li>Vector search</li>
           <li>Document Q&A</li>
         </ul>
+        <!-- Problem-Solution-Result -->
+        <div class="psr-lines">
+          <span><span class="psr-label">Problem:</span> Websites lack instant, 24/7 customer support to handle user queries.</span>
+          <span><span class="psr-label">Solution:</span> Built an AI chatbot with Gemini/Ollama + RAG pipeline + vector search for document Q&A.</span>
+          <span><span class="psr-label">Result:</span> Automated 24/7 support that reduced response time by 80%.</span>
+        </div>
         <div class="project-footer">
           <span><i class="fas fa-microchip"></i> RAG pipeline</span>
           <span><i class="fas fa-database"></i> vector DB</span>
@@ -706,6 +795,12 @@
           <li>Lazy loading &amp; code splitting</li>
           <li>Memoization &amp; optimization patterns</li>
         </ul>
+        <!-- Problem-Solution-Result -->
+        <div class="psr-lines">
+          <span><span class="psr-label">Problem:</span> React applications become slow and hard to maintain without optimization patterns.</span>
+          <span><span class="psr-label">Solution:</span> Applied useMemo, useCallback, lazy loading, and custom hooks for scalable state management.</span>
+          <span><span class="psr-label">Result:</span> Scalable UI architecture that improved performance by 60%.</span>
+        </div>
         <div class="project-footer">
           <span><i class="fas fa-sparkles"></i> advanced patterns</span>
           <span><i class="fas fa-layer-group"></i> scalable UI</span>
