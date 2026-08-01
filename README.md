@@ -1,8 +1,79 @@
-<!-- HEADER BANNER -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=220&section=header&text=AFTAB%20JAMIL&fontSize=60&fontAlignY=35&desc=Full-Stack%20Web%20Developer%20|%20MERN%20Stack%20%26%20AI%20Enthusiast&descAlignY=60&descAlign=50" width="100%" />
 
-  <!-- BADGE BUTTONS -->
+
+<style>
+  .hero-banner-wrap {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto 20px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #040817, #08112d 65%, #03060e);
+    box-shadow: 0 0 0 1px rgba(73, 139, 255, 0.25), 0 24px 80px rgba(0, 0, 0, 0.45);
+    position: relative;
+  }
+  .hero-banner-frames {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 5;
+    background: #060b1d;
+  }
+  .hero-banner-slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    opacity: 0;
+    animation: bannerLoop 24s infinite;
+    background: #060b1d;
+  }
+  .hero-banner-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  }
+  .hero-banner-slide:nth-child(1) { animation-delay: 0s; }
+  .hero-banner-slide:nth-child(2) { animation-delay: 4s; }
+  .hero-banner-slide:nth-child(3) { animation-delay: 8s; }
+  .hero-banner-slide:nth-child(4) { animation-delay: 12s; }
+  .hero-banner-slide:nth-child(5) { animation-delay: 16s; }
+  .hero-banner-slide:nth-child(6) { animation-delay: 20s; }
+
+  @keyframes bannerLoop {
+    0%, 14.5% { opacity: 1; }
+    16.5%, 100% { opacity: 0; }
+  }
+</style>
+
+<div align="center" class="hero-banner-wrap">
+  <div class="hero-banner-frames">
+    <div class="hero-banner-slide">
+      <img src="./Gemini_Generated_Image_2fmtd62fmtd62fmt.png" alt="Authentication system banner 1" />
+    </div>
+    <div class="hero-banner-slide">
+      <img src="./Gemini_Generated_Image_2fmtd62fmtd62fmt(1).png" alt="Authentication system banner 2" />
+    </div>
+    <div class="hero-banner-slide">
+      <img src="./Gemini_Generated_Image_2fmtd62fmtd62fmt(2).png" alt="E-commerce platform banner 1" />
+    </div>
+    <div class="hero-banner-slide">
+      <img src="./Gemini_Generated_Image_2fmtd62fmtd62fmt(3).png" alt="E-commerce platform banner 2" />
+    </div>
+    <div class="hero-banner-slide">
+      <img src="./Gemini_Generated_Image_2fmtd62fmtd62fmt(4).png" alt="AI chatbot system banner 1" />
+    </div>
+    <div class="hero-banner-slide">
+      <img src="./Gemini_Generated_Image_2fmtd62fmtd62fmt(5).png" alt="AI chatbot system banner 2" />
+    </div>
+  </div>
+</div>
+
+<!-- BADGE BUTTONS -->
   <a href="https://www.linkedin.com/in/aftab-jamil-03a95a2b7">
     <img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
@@ -25,21 +96,33 @@
 
 > "Solving real-world problems with clean, scalable code and continuous innovation."
 
-I'm **Aftab Jamil**, a passionate **Full-Stack Web Developer** specializing in building modern, production-ready web applications using the **MERN Stack** (MongoDB, Express.js, React.js, Node.js). Currently exploring the frontiers of **AI & Generative AI** to engineer intelligent web solutions.
+I'm **Aftab Jamil**, a passionate **Full-Stack Web Developer** specializing in building modern, production-ready web applications using the **MERN Stack** (MongoDB, Express.js, React.js, Node.js). Currently engineering intelligent web solutions using **Retrieval-Augmented Generation (RAG)** and **Generative AI**.
 
 | Category | Detail |
 | :--- | :--- |
-| 🏛️ **Role** | Full-Stack Web Developer \| MERN Stack Engineer |
-| 🏗️ **What I Do** | Design, build, and deploy end-to-end full-stack web applications with robust architecture |
+| 🏛️ **Role** | Full-Stack Web Developer \| MERN Stack & AI Systems Engineer |
+| 🏗️ **What I Do** | Design, build, and deploy end-to-end full-stack web applications & AI agent workflows |
 | 🎓 **Academic Background** | IT Graduate from **MNS University of Agriculture, Multan (MNSUAM)** |
-| ⚙️ **Specialization** | MERN Stack, RESTful APIs, Real-time WebSockets, Payment Gateway Integration |
+| ⚙️ **Specialization** | MERN Stack, AI Chatbots (RAG), Vector Databases, RESTful APIs, WebSockets |
 | 🚀 **Track Record** | 1.5+ Years of hands-on experience building scalable, high-performance web systems |
 
 ---
 
 ## 🚀 Featured Projects & Systems
 
-### 🛒 1. Full-Stack MERN E-Commerce Platform
+### 🤖 1. AI Chatbot · RAG (Retrieval-Augmented Generation)
+> *An intelligent 24/7 AI conversational system powered by Gemini & Ollama with semantic vector search for precise document Q&A.*
+
+#### 🔑 Key Features
+* 🧠 **LLM Engine:** Powered by Gemini & Ollama for fast, local/cloud-based natural language processing.
+* 🔍 **Vector Search & RAG:** High-accuracy semantic search over private documents using specialized vector databases.
+* 📄 **Document Q&A:** Instant query handling and document querying without information hallucination.
+* ⚙️ **Problem Solved:** Web applications lack instant, automated support for custom knowledge bases.
+* 📈 **Impact:** Automated 24/7 support that reduced query response time by up to 80%.
+
+---
+
+### 🛒 2. Full-Stack MERN E-Commerce Platform
 > *An enterprise-grade e-commerce application equipped with secure authentication, payment processing, and interactive real-time management.*
 
 #### 🔑 Key Features
@@ -52,7 +135,7 @@ I'm **Aftab Jamil**, a passionate **Full-Stack Web Developer** specializing in b
 
 ---
 
-### 🌐 2. Next-Gen Social Media Platform
+### 🌐 3. Next-Gen Social Media Platform
 > *A feature-rich social networking workspace enabling real-time community engagement, content sharing, and dynamic user feeds.*
 
 #### 🔑 Key Features
@@ -64,7 +147,7 @@ I'm **Aftab Jamil**, a passionate **Full-Stack Web Developer** specializing in b
 
 ---
 
-### 💬 3. Real-Time Instant Messenger
+### 💬 4. Real-Time Instant Messenger
 > *A modern WhatsApp-style messaging platform engineered for ultra-low latency, real-time communication.*
 
 #### 🔑 Key Features
@@ -77,6 +160,16 @@ I'm **Aftab Jamil**, a passionate **Full-Stack Web Developer** specializing in b
 
 ## 🛠️ Tech Stack Command Center
 
+### 🤖 AI, LLM & RAG Systems
+<p>
+  <img src="https://img.shields.io/badge/Gemini_AI-8E7CC3?style=for-the-badge&logo=googlegemini&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" />
+  <img src="https://img.shields.io/badge/LangChain-121212?style=for-the-badge&logo=chainlink&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vector_DB-0055DA?style=for-the-badge&logo=database&logoColor=white" />
+</p>
+
+`RAG Pipelines` `Gemini` `Ollama` `Vector Search` `Document Q&A` `LangChain`
+
 ### 🌐 Frontend & UI Engineering
 <p>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
@@ -86,7 +179,7 @@ I'm **Aftab Jamil**, a passionate **Full-Stack Web Developer** specializing in b
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 </p>
 
-`HTML5` `CSS3` `JavaScript (ES6+)` `React.js` `React Hooks` `React Rendering` `Tailwind CSS`
+`HTML5` `CSS3` `JavaScript (ES6+)` `React.js` `React Hooks` `Tailwind CSS`
 
 ### ⚙️ Backend, APIs & Architecture
 <p>
@@ -96,7 +189,7 @@ I'm **Aftab Jamil**, a passionate **Full-Stack Web Developer** specializing in b
   <img src="https://img.shields.io/badge/REST_API-0055DA?style=for-the-badge&logo=postman&logoColor=white" />
 </p>
 
-`Node.js` `Express.js` `REST APIs` `Middleware Architecture` `Node Cron Jobs` `Socket.io`
+`Node.js` `Express.js` `REST APIs` `Middleware Architecture` `Socket.io`
 
 ### 🗄️ Databases & Storage
 <p>
@@ -104,7 +197,7 @@ I'm **Aftab Jamil**, a passionate **Full-Stack Web Developer** specializing in b
   <img src="https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logo=mongoose&logoColor=white" />
 </p>
 
-`MongoDB` `Mongoose ORM`
+`MongoDB` `Mongoose ORM` `Vector Databases`
 
 ### 🔐 Auth, Security & Payments
 <p>
@@ -113,18 +206,7 @@ I'm **Aftab Jamil**, a passionate **Full-Stack Web Developer** specializing in b
   <img src="https://img.shields.io/badge/Stripe-008CDD?style=for-the-badge&logo=stripe&logoColor=white" />
 </p>
 
-`JWT Authentication` `OAuth 2.0` `Cookie Auth` `SMTP Verification` `Stripe Integration`
-
-### 🧰 Developer Tools & DevOps
-<p>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
-</p>
-
-`Git` `GitHub` `Docker` `Linux` `VS Code` `Cursor IDE` `Google Antigravity`
+`JWT Authentication` `OAuth 2.0` `Cookie Auth` `Stripe Integration`
 
 ---
 
@@ -132,9 +214,9 @@ I'm **Aftab Jamil**, a passionate **Full-Stack Web Developer** specializing in b
 
 | Focus | Details |
 | :--- | :--- |
-| 🤖 **AI & Generative AI** | Integrating LLMs into modern web workflows |
+| 🤖 **AI Agent Workflows** | Autonomous task execution with LLM agents |
 | 🎯 **Prompt Engineering** | Building optimized AI-driven interface prompts |
-| ⚡ **AI Web Applications** | Building smart, automated full-stack platforms |
+| ⚡ **Local LLMs & Ollama** | Deploying custom open-source models locally |
 
 ---
 
@@ -149,7 +231,7 @@ I'm **Aftab Jamil**, a passionate **Full-Stack Web Developer** specializing in b
 
 ## 🤝 Strategic Collaborations & Connect
 
-If you're looking for a **Full-Stack Developer** to build, scale, and optimize web software, let's connect and build together:
+If you're looking for a **Full-Stack Developer** to build, scale, and optimize AI-powered web software, let's connect and build together:
 
 * 💼 **LinkedIn:** [Aftab Jamil](https://www.linkedin.com/in/aftab-jamil-03a95a2b7)
 * 📧 **Email:** [aftabjamil760@gmail.com](mailto:aftabjamil760@gmail.com)
