@@ -1,27 +1,94 @@
+markdown
+
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=00FF00&center=true&vCenter=true&width=700&lines=👋+Hi%2C+I'm+Aftab+Jamil;Full-Stack+Web+Developer;MERN+Stack+Architect;🚀+Building+The+Future+of+Web" alt="Typing SVG" />
+  
+# 👋 Hi, I'm Aftab Jamil
+
+### Full-Stack Web Developer | MERN Stack Architect
+
+🎓 **IT Graduate** | MNS University of Agriculture, Multan (MNSUAM)  
+💼 **1.5+ Years Experience** | Building Modern Web Applications  
+
 </div>
 
 ---
 
-## 🚀 **About Me**
+## 🚀 About Me
 
-> *"From the farms of Multan to the frontiers of technology — building scalable web solutions with 💻 passion & ☕ persistence."*
+> *"From the farms of Multan to the frontiers of technology — building scalable web solutions with passion & persistence."*
 
-🎓 **IT Graduate** | MNS University of Agriculture, Multan (MNSUAM)  
-💼 **Full-Stack Developer** | 1.5+ Years of Industry Experience  
-🌐 **Tech Stack:** MERN, Next.js, TypeScript, TailwindCSS  
-🤖 **Exploring:** Generative AI, LLMs, AI-Powered Applications  
-🔐 **Passionate about:** Clean Code, Scalable Architecture, Cyber Security  
+🔭 I'm currently working on **AI-powered Web Applications**  
+🌱 Exploring **Generative AI, LLMs, and Prompt Engineering**  
+💬 Ask me about **MERN Stack, REST APIs, and Web Security**  
+⚡ Fun fact: I write code that solves real-world problems  
 
 ---
 
-## 📊 **Developer Metrics**
+## 📊 Developer Stats
 
 ```yaml
-🧑‍💻 Experience: 1.5+ Years
+📅 Experience: 1.5+ Years
 📁 Projects: 20+ Completed
-⭐ GitHub Stars: 10+ 
-🔀 Pull Requests: 50+
-🐛 Bugs Fixed: 100+
-📚 Daily Learning: 2+ Hours
+👨‍💻 Daily Coding: 4-6 Hours
+📚 Learning: AI & Generative Technologies
+🎯 Goal: Build Scalable Web Solutions
+
+🛠️ Tech Stack
+🌐 Frontend Development
+text
+
+HTML5    | CSS3     | JavaScript (ES6+)  | React.js
+Next.js  | TypeScript | Tailwind CSS     | React Hooks
+
+⚙️ Backend Development
+text
+
+Node.js  | Express.js | REST APIs      | Microservices
+NestJS   | GraphQL    | Middleware     | Node Cron Jobs
+
+🗄️ Databases
+text
+
+MongoDB  | MySQL      | PostgreSQL    | Redis
+Mongoose | Prisma     | ORM
+
+🔐 Authentication & Security
+text
+
+JWT      | OAuth      | Cookie Auth   | bcrypt
+Helmet.js| CORS       | SMTP Email    | Rate Limiting
+
+💳 Payment Integration
+text
+
+Stripe   | PayPal     | Square
+
+🧰 Tools & DevOps
+text
+
+Git     | GitHub     | Docker        | Linux
+Postman | VS Code    | Cursor IDE    | Terminal
+
+🏗️ Featured Projects
+🛒 E-Commerce Platform (MERN Stack)
+
+Live Demo: [Coming Soon] | Source Code: [Private]
+
+Features:
+
+    🔐 User Authentication (JWT + Cookies)
+
+    🛍️ Product Catalog with Search
+
+    🛒 Shopping Cart System
+
+    💳 Stripe Payment Integration
+
+    📋 Order Management System
+
+    👑 Admin Dashboard
+
+    ✉️ Email Notifications
+
+    📱 Fully Responsive Design
+
