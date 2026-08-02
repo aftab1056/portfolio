@@ -1,76 +1,7 @@
 
 
-<style>
-  .hero-banner-wrap {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto 20px;
-    border-radius: 24px;
-    overflow: hidden;
-    background: linear-gradient(135deg, #040817, #08112d 65%, #03060e);
-    box-shadow: 0 0 0 1px rgba(73, 139, 255, 0.25), 0 24px 80px rgba(0, 0, 0, 0.45);
-    position: relative;
-  }
-  .hero-banner-frames {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 5;
-    background: #060b1d;
-  }
-  .hero-banner-slide {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px;
-    opacity: 0;
-    animation: bannerLoop 24s infinite;
-    background: #060b1d;
-  }
-  .hero-banner-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    display: block;
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-  }
-  .hero-banner-slide:nth-child(1) { animation-delay: 0s; }
-  .hero-banner-slide:nth-child(2) { animation-delay: 4s; }
-  .hero-banner-slide:nth-child(3) { animation-delay: 8s; }
-  .hero-banner-slide:nth-child(4) { animation-delay: 12s; }
-  .hero-banner-slide:nth-child(5) { animation-delay: 16s; }
-  .hero-banner-slide:nth-child(6) { animation-delay: 20s; }
-
-  @keyframes bannerLoop {
-    0%, 14.5% { opacity: 1; }
-    16.5%, 100% { opacity: 0; }
-  }
-</style>
-
-<div align="center" class="hero-banner-wrap">
-  <div class="hero-banner-frames">
-    <div class="hero-banner-slide">
-      <img src="./Gemini_Generated_Image_2fmtd62fmtd62fmt.png" alt="Authentication system banner 1" />
-    </div>
-    <div class="hero-banner-slide">
-      <img src="./Gemini_Generated_Image_2fmtd62fmtd62fmt(1).png" alt="Authentication system banner 2" />
-    </div>
-    <div class="hero-banner-slide">
-      <img src="./Gemini_Generated_Image_2fmtd62fmtd62fmt(2).png" alt="E-commerce platform banner 1" />
-    </div>
-    <div class="hero-banner-slide">
-      <img src="./Gemini_Generated_Image_2fmtd62fmtd62fmt(3).png" alt="E-commerce platform banner 2" />
-    </div>
-    <div class="hero-banner-slide">
-      <img src="./Gemini_Generated_Image_2fmtd62fmtd62fmt(4).png" alt="AI chatbot system banner 1" />
-    </div>
-    <div class="hero-banner-slide">
-      <img src="./Gemini_Generated_Image_2fmtd62fmtd62fmt(5).png" alt="AI chatbot system banner 2" />
-    </div>
-  </div>
+<div align="center">
+  <img src="./ezgif-2b1ba66035cf3f66.gif" alt="AI chatbot system banner" width="1400" />
 </div>
 
 <!-- BADGE BUTTONS -->
@@ -87,8 +18,6 @@
   <img src="https://img.shields.io/badge/EXPERIENCE-1.5%2B%20YEARS-brightgreen?style=flat-square" />
   <img src="https://img.shields.io/badge/STACK-MERN%20%2B%20AI-blue?style=flat-square" />
   <img src="https://img.shields.io/badge/STATUS-BUILDING%20%26%20LEARNING-orange?style=flat-square" />
-
-</div>
 
 ---
 
